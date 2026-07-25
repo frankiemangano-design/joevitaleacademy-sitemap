@@ -1,10 +1,9 @@
 /* Statbrook — GHL blog+funnel attribution runtime.
  * Source: github.com/frankiemangano-design/joevitale-lead-gen
  *         blog/pipeline/attribution_runtime.py
- * Serve via https://sitemap.joevitaleacademy.com/attribution.js
- * or         https://cdn.jsdelivr.net/gh/frankiemangano-design/joevitaleacademy-sitemap@main/attribution.js
  */
 (function(){
+if(window.__sbAttrRan){return}window.__sbAttrRan=true;
 var K=['utm_source','utm_medium','utm_campaign','utm_content','utm_term'];
 var P='sb_attr_';
 var IF='iframe[src*="leadconnectorhq.com/widget/form/"]';
